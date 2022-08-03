@@ -403,7 +403,7 @@ footer {
 .set1 {
   opacity: 0;
 }
-.set2.second-img {
+.set2.first-img {
   animation: slide 2s forwards;
   transition: 0.5s;
   opacity: 1;
@@ -419,7 +419,7 @@ footer {
     transform: scale(1);
   }
 }
-.set3.third-imge {
+.set3.first-img {
   animation: slidedown 2s forwards;
   transition: 0.5s;
   opacity: 1;
@@ -445,7 +445,7 @@ footer {
   }
 }
 
-.set4.fourth-imge {
+.set4.first-img {
   animation: slidedown1 2s forwards;
   transition: 1s;
   opacity: 1;
@@ -498,6 +498,51 @@ footer {
   .content {
     display: grid;
     grid-template-columns: auto auto;
+  }
+}
+
+.pink.first-img {
+  animation: pin 1s forwards;
+  transition: 0.5s;
+  opacity: 1;
+}
+@keyframes pin {
+  0% {
+    transform: translateX(-330px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.orange.first-img {
+  animation: pins 1s forwards;
+  transition: 0.5s;
+  opacity: 1;
+}
+@keyframes pins {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pink,
+.yellow,
+.orange {
+  opacity: 0;
+}
+.yellow.first-img {
+  animation: lasts 1s forwards;
+  transition: 0.5s;
+  opacity: 1;
+}
+@keyframes lasts {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
